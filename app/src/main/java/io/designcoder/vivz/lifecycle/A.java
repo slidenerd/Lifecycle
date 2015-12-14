@@ -16,11 +16,19 @@ public class A extends AppCompatActivity {
 
     public static final String TAG = "VIVZ";
 
+    private TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
+        textView = (TextView) findViewById(R.id.input);
         Log.d(TAG, "onCreate:");
+
+        if (savedInstanceState != null) {
+            CharSequence value = savedInstanceState.getCharSequence("key");
+            textView.setText(value);
+        }
     }
 
     @Override
@@ -40,6 +48,15 @@ public class A extends AppCompatActivity {
         super.onResume();
         Log.d(TAG, "onResume: ");
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d(TAG, "onSaveInstanceState: ");
+        outState.putCharSequence("key", textView.getText());
+
+    }
+
 
     @Override
     protected void onPause() {
@@ -65,8 +82,9 @@ public class A extends AppCompatActivity {
     }
 
     public void launchDialog(View view) {
-        Intent intent = new Intent(this, C.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, C.class);
+//        startActivity(intent);
+        launchDialoFragment();
     }
 
     public void launchDialogAlert() {
