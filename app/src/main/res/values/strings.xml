@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lifecycle</string>
+    <string name="hint">Input</string>
+    <string name="hello_b">Hello, I am B</string>
+    <string name="hello_c">I look like a dialog most certainly but are you sure I am a dialog?</string>
+    <string name="hello_a">Hello, I am A</string>
+    <string name="initial_value">1</string>
+</resources>
