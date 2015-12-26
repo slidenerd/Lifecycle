@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import io.designcoder.vivz.lifecycle.xml.ActivityFragmentXml;
+
 public class A extends AppCompatActivity {
 
     public static final String TAG = "VIVZ";
@@ -50,16 +52,26 @@ public class A extends AppCompatActivity {
                 launchDialogAlert();
                 break;
             case R.id.action_dialog_fragment:
-                launchDialoFragment();
+                launchDialogFragment();
                 break;
             case R.id.action_fragment_lifecycle:
                 launchActivityD();
                 break;
             case R.id.action_combined_lifecycle:
                 launchActivityE();
+                break;
+            case R.id.action_fragments_xml:
+                launchActivityFragmentXML();
+                break;
         }
         return handled;
     }
+
+    private void launchActivityFragmentXML() {
+        Intent intent = new Intent(this, ActivityFragmentXml.class);
+        startActivity(intent);
+    }
+
 
     private void launchActivityE() {
         Intent intent = new Intent(this, E.class);
@@ -127,7 +139,7 @@ public class A extends AppCompatActivity {
                 .show();
     }
 
-    public void launchDialoFragment() {
+    public void launchDialogFragment() {
         MyDialog myDialog = new MyDialog();
         myDialog.show(getSupportFragmentManager(), "my_dialog");
     }

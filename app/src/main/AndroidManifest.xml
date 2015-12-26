@@ -20,7 +20,8 @@
             android:name=".C"
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".D" />
-        <activity android:name=".E"></activity>
+        <activity android:name=".E" />
+        <activity android:name=".xml.ActivityFragmentXml"></activity>
     </application>
 
 </manifest>

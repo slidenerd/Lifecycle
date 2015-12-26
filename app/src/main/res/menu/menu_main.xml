@@ -16,4 +16,7 @@
     <item
         android:id="@+id/action_combined_lifecycle"
         android:title="@string/action_combined_lifecycle" />
+    <item
+        android:id="@+id/action_fragments_xml"
+        android:title="@string/action_fragments_xml" />
 </menu>
