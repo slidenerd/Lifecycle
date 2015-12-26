@@ -55,8 +55,15 @@ public class A extends AppCompatActivity {
             case R.id.action_fragment_lifecycle:
                 launchActivityD();
                 break;
+            case R.id.action_combined_lifecycle:
+                launchActivityE();
         }
         return handled;
+    }
+
+    private void launchActivityE() {
+        Intent intent = new Intent(this, E.class);
+        startActivity(intent);
     }
 
     private void launchActivityD() {

@@ -11,4 +11,5 @@
     <string name="action_fragment_lifecycle">Show Fragment Lifecycle</string>
     <string name="message_activity">Hi, I am the activity who contains the fragment below</string>
     <string name="message_fragment">Hello there, I am the fragment you heard so much about!</string>
+    <string name="action_combined_lifecycle">Combined Lifecycle</string>
 </resources>
