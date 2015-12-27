@@ -18,4 +18,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment_xml_b">Hello I am Fragment B and I will be added to the Activity through XML</string>
+    <string name="fragment_code_a">Hi I am Fragment A and I will be added to the Activity through code</string>
+    <string name="fragment_code_b">Hi I am Fragment B and I will be added to the Activity through code</string>
+    <string name="action_fragments_code">Show Fragments Added in Code</string>
 </resources>

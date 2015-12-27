@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import io.designcoder.vivz.lifecycle.code.ActivityFragmentCode;
 import io.designcoder.vivz.lifecycle.xml.ActivityFragmentXml;
 
 public class A extends AppCompatActivity {
@@ -63,8 +64,16 @@ public class A extends AppCompatActivity {
             case R.id.action_fragments_xml:
                 launchActivityFragmentXML();
                 break;
+            case R.id.action_fragments_code:
+                launchActivityFragmentCode();
+                break;
         }
         return handled;
+    }
+
+    private void launchActivityFragmentCode() {
+        Intent intent = new Intent(this, ActivityFragmentCode.class);
+        startActivity(intent);
     }
 
     private void launchActivityFragmentXML() {

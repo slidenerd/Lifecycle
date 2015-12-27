@@ -21,7 +21,8 @@
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".D" />
         <activity android:name=".E" />
-        <activity android:name=".xml.ActivityFragmentXml"></activity>
+        <activity android:name=".xml.ActivityFragmentXml" />
+        <activity android:name=".code.ActivityFragmentCode"></activity>
     </application>
 
 </manifest>
