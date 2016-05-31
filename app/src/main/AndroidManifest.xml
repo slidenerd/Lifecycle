@@ -18,7 +18,9 @@
         <activity android:name=".B" />
         <activity
             android:name=".C"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".D" />
+        <activity android:name=".E"></activity>
     </application>
 
 </manifest>

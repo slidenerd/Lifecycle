@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_activity"
+        android:title="@string/action_activity" />
+    <item
+        android:id="@+id/action_alert_dialog"
+        android:title="@string/action_alert_dialog" />
+
+    <item
+        android:id="@+id/action_dialog_fragment"
+        android:title="@string/action_dialog_fragment" />
+    <item
+        android:id="@+id/action_fragment_lifecycle"
+        android:title="@string/action_fragment_lifecycle" />
+    <item
+        android:id="@+id/action_combined_lifecycle"
+        android:title="@string/action_combined_lifecycle" />
+</menu>
